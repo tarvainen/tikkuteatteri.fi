@@ -1,0 +1,71 @@
+---
+layout: default
+---
+
+<div class="hero">
+  <h1>Päivää.</h1>
+
+  <p>Valmistan pieniä käsityötuotteita perinteisellä japanilaisella kumikotekniikalla verstaallani Jyväskylässä.</p>  
+</div>
+
+{% include nav.html %}
+
+&nbsp;
+
+<div class="featured-content">
+  <div class="info">
+    <div>
+      <h3>Valmiit tuotteet</h3>
+
+      <p>Käyttö- ja taide-esineitä, joita ei joka päivä vastaan astele. Ainutlaatuisia lahjoja tärkeille ihmisille tai itsellesi.</p>
+
+      {% include button.html 
+        url="https://tikkuteatteri.mycashflow.fi/category/2/tuotteet" 
+        text="Kauppaan!"
+        icon="fa-store"
+      %}
+    </div>
+  </div>
+  <div class="img">
+    <img src={{ "/assets/images/kumikolyhty.jpg" | relative_url }} alt="Käsityönä valmistettu kumikolyhty" />
+  </div>
+</div>
+
+<div class="featured-content flip">
+  <div class="info">
+    <div>
+      <h3>Kumikon valmistustarvikkeet</h3>
+
+      <p>Työkaluja ja tarvikkeita oman kumikoharrastuksesi aloittamiseen. </p>
+
+      {% include button.html 
+        url="https://tikkuteatteri.mycashflow.fi/category/3/tarvikkeet" 
+        text="Tutustu tarvikkeisiin"
+        icon="fa-toolbox"
+      %}
+    </div>
+
+  </div>
+  <div class="img">
+    <img src={{ "/assets/images/kumiko-valmistusprosessi.jpg" | relative_url }} alt="Kumikon tekoprosessi" />
+  </div>
+</div>
+
+<div class="featured-content">
+  <div class="info">
+    <div>
+      <h3>Tilaustyöt</h3>
+
+      <p>Pidän haasteista ja erilaisten töiden tekemisestä. Suunnitellaan ja valmistetaan juuri sinulle sopiva tuote.</p>
+
+      {% include button.html 
+        url="https://tikkuteatteri.mycashflow.fi/page/5/ota-yhteytta" 
+        text="Ota yhteyttä"
+        icon="fa-envelope"
+      %}
+    </div>
+  </div>
+  <div class="img">
+    <img src={{ "/assets/images/kumikovalaisin.jpg" | relative_url }} alt="Pyöreä käsityönä valmistettu kumikovalaisin" />
+  </div>
+</div>
