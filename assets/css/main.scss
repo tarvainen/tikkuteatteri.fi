@@ -5,11 +5,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Open+Sans:wght@300;600&display=swap');
 
-
-$padding-small: 8px;
-$padding-medium: 16px;
-$padding-large: 24px;
-
 html, body {
   padding: 0;
   margin: 0;
@@ -38,19 +33,6 @@ h1, h2, h3, h4 {
   }
 }
 
-.hero-junior {
-  padding: 24px;
-  text-align: center;
-  margin-top: 80px;
-  font-size: 1.2em;
-  line-height: 1.6;
-
-  h2 {
-    font-family: 'Merriweather', serif;
-    font-size: 28px;
-  }
-}
-
 nav {
   display: table;
   margin: 40px auto;
@@ -76,16 +58,16 @@ a.button {
 }
 
 .featured-content {
-  &.flip {
-    flex-direction: row-reverse;
-  }
-
   max-width: 1000px;
   width: 90%;
   margin: 30px auto;
   display: flex;
   font-size: 1.2em;
 
+  &.flip {
+    flex-direction: row-reverse;
+  }
+  
   .info {
     flex: 0.55;
 
