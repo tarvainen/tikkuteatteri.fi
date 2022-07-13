@@ -74,6 +74,10 @@ a.button {
     div {
       margin: 4em 0 0 4em;
 
+      @media screen and (max-width: 600px) {
+        margin: 4em 0 0 2em;
+      }
+
       p {
         width: 80%;
         margin-bottom: 42px;
@@ -122,6 +126,7 @@ footer {
   display: flex;
   padding: 24px 48px;
   justify-content: space-between;
+  align-items: center;
   max-width: 1000px;
   margin: auto;
 
