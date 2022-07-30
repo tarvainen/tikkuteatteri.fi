@@ -50,6 +50,7 @@ a.button {
   border-radius: 5px;
   color: #2E4453;
   font-size: 16px;
+  background-color: #fff;
 
   &:hover {
     color: #333;
@@ -59,10 +60,20 @@ a.button {
 
 .featured-content {
   max-width: 1000px;
-  width: 90%;
   margin: 30px auto;
   display: flex;
   font-size: 1.2em;
+  padding: 24px;
+
+  @media screen and (max-width: 900px) {
+    flex-direction: column-reverse !important;
+    margin-top: 32px;
+    padding: 4em 2em;
+
+    &:nth-of-type(2n+1) {
+      background: #ebebeb;
+    }
+  }
 
   &.flip {
     flex-direction: row-reverse;
@@ -75,7 +86,7 @@ a.button {
       margin: 4em 0 0 4em;
 
       @media screen and (max-width: 600px) {
-        margin: 4em 0 0 2em;
+        margin: 2em 0 0 2em;
       }
 
       p {
@@ -96,7 +107,7 @@ a.button {
     padding-bottom: 50%;
 
     @media screen and (max-width: 900px) {
-      display: none;
+      padding-bottom: 0;
     }
 
     img {
